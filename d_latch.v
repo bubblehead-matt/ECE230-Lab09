@@ -1,6 +1,7 @@
 module d_latch(
     input D, E,
-    output Q, NotQ
+    output reg Q, 
+    output NotQ
 );
   
 // E - enable
