@@ -66,7 +66,7 @@ module memory_system(
         .B(memoryB),
         .C(memoryC),
         .D(memoryD),
-        .Select(addr),
+        .sel(addr),
         .Out(memory)
     );
   
