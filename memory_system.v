@@ -61,7 +61,7 @@ module memory_system(
 
     // and one multiplexer:
     // 1. Multiplex selected byte -> memory
-    multiplexer output_mux(
+    multiplexer_8_bit output_mux(
         .A(memoryA),
         .B(memoryB),
         .C(memoryC),
