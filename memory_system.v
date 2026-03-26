@@ -40,7 +40,7 @@ module memory_system(
     // output for display on the LEDs
     // you will need 2 demultiplexers:
     // 1. Demultiplex data -> selected byte
-    demultiplexer data_demux (
+    demultiplexer_8_bit data_demux (
       .data(data),
       .sel(addr),
       .A(dataA),
@@ -50,7 +50,7 @@ module memory_system(
     );
 
     // 2. Demultiplex store -> selected byte
-    demultiplexer store_demux (
+    demultiplexer_1_bit store_demux (
       .data(store),
       .sel(addr),
       .A(storeA),
